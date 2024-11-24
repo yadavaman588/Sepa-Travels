@@ -1,18 +1,21 @@
 :host {
     display: block;
-    background: linear-gradient(to bottom, #000 30%, #060606 60%, #333 100%);
-    color: white;
   }
   
   .home-container {
     display: flex;
+    background: linear-gradient(to bottom, #000 30%, #060606 60%, #333 100%);
+    color: white;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    width: 100%;
   }
   
   .info {
     flex: 1;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
   
   .info h2 {
@@ -59,6 +62,8 @@
 .service-section {
   background-color: white; /* Set the background color to white */
   padding: 50px 20px;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .service-info {
@@ -135,6 +140,8 @@
   gap: 20px; /* Space between blocks */
   padding: 50px 20px;
   background-color: #fff; /* Light gray background for the section */
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 /* Individual car block styling */
@@ -226,69 +233,47 @@
 
 
 
-/* Contact Section */
 .contact-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #CEB25F;
-  padding: 50px 20px;
-  color: white;
+  background-color: #d1b26f; /* Matches the golden background */
+  color: #fff; /* White text */
+  padding: 20px;
 }
 
-/* Contact Text */
 .contact-text {
-  flex: 1;
-  max-width: 500px;
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+  max-width: 50%;
+  margin-left: 3vw;
 }
 
 .contact-text h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  
 }
 
 .contact-text p {
-  font-size: 30px;
-  margin-bottom: 5px;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
-.phone-number {
-  font-size: 28px;
+.contact-text .phone-number {
+  font-size: 32px;
   font-weight: bold;
-  margin-top: 20px;
-}
-.contact-text span{
-  color: white;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: normal;
+  color: #fff; /* White for the phone number */
 }
 
-/* Contact Image */
-.contact-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-text span {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
 }
 
 .contact-image img {
-  max-width: 30%;
-  height: auto;
-  border-radius: 10px; /* Optional: to round the corners of the image */
+  max-width: 400px; /* Adjust size as needed */
+  margin-right: 3vw;
 }
-
-
-
 
 
 /* Feedback Section */
@@ -298,6 +283,8 @@
   gap: 20px;
   padding: 50px 20px;
   background-color: white; /* Light background color for the feedback section */
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 /* Individual Feedback Box */
