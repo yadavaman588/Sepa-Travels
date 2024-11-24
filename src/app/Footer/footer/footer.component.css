@@ -1,0 +1,24 @@
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Black background */
+    color: white; /* White text */
+    padding: 20px 40px;
+  }
+  
+  /* Footer Left */
+  .footer-left h3 {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Footer Right */
+  .footer-right img {
+    max-width: 100px; /* Adjust size of the Visa logo */
+    height: auto;
+  }
+  

@@ -1,0 +1,340 @@
+:host {
+    display: block;
+    background: linear-gradient(to bottom, #000 30%, #060606 60%, #333 100%);
+    color: white;
+  }
+  
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .info h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+  }
+  
+  .info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #CAAA58;
+  }
+  
+  .phone-number {
+    font-size: 48px;
+    color: white;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+  }
+  
+  .car-image img {
+    max-width: 100%;
+    height: auto; 
+    flex: 1; 
+    transform: scale(1.1); 
+  }
+
+
+ /* Service Section */
+.service-section {
+  background-color: white; /* Set the background color to white */
+  padding: 50px 20px;
+}
+
+.service-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10vh;
+}
+
+.time-highlight {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.time-highlight .time {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #caaa58;
+  font-size: 280px;
+  line-height: 0.5;
+  letter-spacing: -10px;
+}
+
+.time-highlight .unit {
+  font-weight: 900;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #caaa58;
+  font-size: 52px;
+  line-height: 2.5;
+  letter-spacing: 4px;
+}
+
+.service-details h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #333333;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.service-details h3 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #333333;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.service-details p {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #333333;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin-top: 4vh;
+}
+
+
+
+
+/* Container for the car blocks */
+.car-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns, each taking equal space */
+  gap: 20px; /* Space between blocks */
+  padding: 50px 20px;
+  background-color: #fff; /* Light gray background for the section */
+}
+
+/* Individual car block styling */
+.car-block {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd; /* Light border around the block */
+  border-radius: 8px; /* Rounded corners */
+  background-color: white; /* White background for each block */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.car-block:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image styling */
+.car-block img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Optional: Rounded edges for the image */
+}
+
+/* Car name styling */
+.car-block .car-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark gray for the text */
+  margin: 0;
+}
+
+
+
+/* Count Section Container */
+.count-section {
+  position: relative;
+  height: 500px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color for counts */
+  padding: 0 20px;
+  overflow: hidden; /* Prevent any overflow outside the section */
+  background-image: url('/building.jpg'); /* Add your background image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Parallax scrolling effect */
+  opacity: 0.8; /* Optional: Make the image less opaque */
+}
+
+/* Count Container */
+.count-container {
+  position: relative;
+  z-index: 2; /* Ensure this content is above the background */
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Individual Count Block */
+.count-block {
+  flex: 1;
+}
+
+.count-block .count {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #caaa58;
+  font-size: 66px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.count-block p {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #CEB25F;
+  padding: 50px 20px;
+  color: white;
+}
+
+/* Contact Text */
+.contact-text {
+  flex: 1;
+  max-width: 500px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.contact-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.contact-text p {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.phone-number {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.contact-text span{
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+/* Contact Image */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px; /* Optional: to round the corners of the image */
+}
+
+
+
+
+
+/* Feedback Section */
+.feedback-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: white; /* Light background color for the feedback section */
+}
+
+/* Individual Feedback Box */
+.feedback-box {
+  flex: 1;
+  background-color: white; /* White background for each box */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for the box */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Quote Symbol */
+.quote-symbol {
+  font-size: 50px;
+  color: #999; /* Light gray for the quote symbol */
+  margin-bottom: 15px;
+}
+
+/* Feedback Text */
+.feedback-text {
+  font-size: 18px;
+  color: #333; /* Darker text color for readability */
+  margin-bottom: 15px;
+  font-style: italic; /* Italicized text for the feedback */
+  line-height: 1.5;
+}
+
+/* Feedback Name */
+.feedback-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: black; /* Name in black */
+}
+
+
+
+
+
+  
