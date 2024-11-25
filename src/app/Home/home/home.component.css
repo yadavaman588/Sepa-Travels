@@ -196,7 +196,7 @@
   background-size: cover; /* Ensure the image covers the section */
   background-position: center center; /* Center the image */
   background-attachment: fixed; /* Parallax scrolling effect */
-  opacity: 0.8; /* Optional: Make the image less opaque */
+ 
 }
 
 /* Count Container */
