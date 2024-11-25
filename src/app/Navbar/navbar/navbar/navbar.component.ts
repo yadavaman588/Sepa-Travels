@@ -19,4 +19,7 @@ export class NavbarComponent {
   service(){
     this._route.navigate(['/Service'])
   }
+  contact(){
+    this._route.navigate(['/Contact'])
+  }
 }
