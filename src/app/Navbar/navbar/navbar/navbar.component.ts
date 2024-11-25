@@ -16,4 +16,7 @@ export class NavbarComponent {
   home(){
     this._route.navigate([''])
   }
+  service(){
+    this._route.navigate(['/Service'])
+  }
 }

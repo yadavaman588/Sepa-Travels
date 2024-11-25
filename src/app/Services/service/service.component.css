@@ -1,0 +1,170 @@
+.hour-service-section {
+    max-width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 6rem;
+  }
+  
+  .hour-service-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hour-service-section .content {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between the image and text */
+  }
+  
+  .hour-service-section .taxi-image {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+  .hour-service-section .text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    color: #555;
+  }
+  
+  .hour-service-section .text p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+  }
+  
+
+
+
+  /* Count Section Container */
+.count-section {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color for counts */
+    padding: 0 20px;
+    overflow: hidden; /* Prevent any overflow outside the section */
+    background-image: url('/ser_building.jpg'); /* Add your background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Parallax scrolling effect */
+  }
+  
+  /* Count Container */
+  .count-container {
+    position: relative;
+    z-index: 2; /* Ensure this content is above the background */
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  /* Individual Count Block */
+  .count-block {
+    flex: 1;
+  }
+  
+  .count-block .count {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: #caaa58;
+    font-size: 66px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  
+  .count-block p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+  }
+  .count-block .p2{
+    line-height: normal;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+
+
+
+
+  .features-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .feature img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .feature p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .more-info {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #d1b26f;
+    font-size: 1rem;
+    border: 1.5px solid #d1b26f;;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .feature:hover .more-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .more-info:hover {
+    background-color: #d1b26f;
+    color: white;
+  }
+  
