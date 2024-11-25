@@ -39,6 +39,10 @@
     color: white;
     margin: 20px 0;
   }
+  .phone-number:hover{
+    color: #d1b26f;
+    cursor: pointer;
+  }
   
   .description {
     font-weight: 300;

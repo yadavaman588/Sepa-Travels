@@ -20,6 +20,11 @@
     align-items: center;
     justify-content: flex-end;
   }
+  .phone-number:hover{
+    color: white;
+    cursor: pointer;
+  }
+
   .call-info .phone-number i {
     margin-right: 0.5rem;
     font-size: 1.2rem;
@@ -27,5 +32,8 @@
   .nav-link{
     color: #CAAA58;
     font-weight: bold;
+    cursor: pointer;
   }
-  
+  .nav-link:hover{
+    color: white;
+  }
