@@ -35,13 +35,14 @@
   }
   
   .phone-number {
-    font-size: 48px;
+    font-size: 5rem;
     color: white;
     margin: 20px 0;
   }
   .phone-number:hover{
     color: #d1b26f;
     cursor: pointer;
+    transition: 0.5s;
   }
   
   .description {
@@ -252,24 +253,28 @@
 }
 
 .contact-text h2 {
-  font-size: 24px;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .contact-text p {
-  font-size: 18px;
+  font-size: 1.4rem;
   margin: 5px 0;
 }
 
 .contact-text .phone-number {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff; /* White for the phone number */
 }
+.contact-text .phone-number:hover{
+  color: #000; /* White for the phone number */
+  transition: 0.4s;
+}
 
 .contact-text span {
-  font-size: 14px;
+  font-size: 1.4rem;
   display: block;
   margin-top: 10px;
 }

@@ -15,7 +15,8 @@ import Swal from 'sweetalert2';
 export class ContactComponent implements OnInit{
 
   contactForm:FormGroup 
-  mail:string = "mail@demolink.org"
+  mail:string = "rishabh@outlook.com"
+  phoneNum:number = 123456;
 
   constructor(private fb:FormBuilder){ 
     this.contactForm = this.fb.group({
@@ -46,4 +47,16 @@ export class ContactComponent implements OnInit{
   //     title: 'Glasgow',
   //   });
   // }
+  sendEmail(){
+    const email = this.mail;
+    const mailtoLink = `ms-outlook:mailto:${email}`;
+
+    // Open the Outlook app or fallback to default mail client
+    window.location.href = mailtoLink;
+  }
+  makeCall(){
+    const phone = this.phoneNum;
+    const makecall = `tel:${phone}`;
+    window.location.href = makecall;
+  }
 }
