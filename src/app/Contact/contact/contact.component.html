@@ -49,19 +49,26 @@
     <div class="count-container">
         <div class="count-block">
             <h2 id="passengers-count" class="count">
+              <div class="home_icon">
+                <i class="fas fa-home" style="font-size: 5rem;"></i>  
+              </div><br>
                 8901 Marmora Road,
                 Glasgow, D04 89GR.</h2>
-            <i class="fa-solid fa-house"></i>
         <!-- <p>PASSENGERS</p> -->
       </div>
-      <div class="count-block">
+      <div class="count-block" (click)="makeCall()" style="cursor: pointer;">
         <h2 id="drivers-count" class="count">
-            +1 234 567 8900<br>
-            +1 234 567 8901
+          <div class="home_icon">
+            <i class="fas fa-phone" style="font-size: 5rem;"></i>  
+          </div><br>
+           {{ phoneNum }}<br>
         </h2>
         <!-- <p>DRIVERS</p> -->
       </div>
-      <div class="count-block">
+      <div class="count-block" (click)="sendEmail()" style="cursor: pointer;">
+        <div class="home_icon">
+          <i class="fas fa-envelope" style="color: #d1b26f; font-size: 5rem;"></i>  
+        </div><br>
         <h2 id="routes-count" class="count">{{ mail }}</h2>
         <!-- <p>ROUTES</p> -->
       </div>
