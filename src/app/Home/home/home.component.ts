@@ -9,6 +9,8 @@ import { FooterComponent } from "../../Footer/footer/footer.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
+ 
+  phoneNum:number = 12345678;
   ngOnInit(): void {
     this.initCounters();
   }
@@ -38,6 +40,11 @@ export class HomeComponent implements OnInit{
       }
       element.innerText = current.toString();
     }, 16.67); // 60 FPS interval
+  }
+  callIn(){
+    const phone = this.phoneNum;
+    const makecall = `tel:${phone}`;
+    window.location.href = makecall;
   }
 
 }
