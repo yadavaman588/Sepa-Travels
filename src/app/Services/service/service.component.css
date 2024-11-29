@@ -1,170 +1,359 @@
+/* General Styles */
 .hour-service-section {
-    max-width: 100%;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-top: 6rem;
-  }
-  
-  .hour-service-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .hour-service-section .content {
-    display: flex;
-    align-items: center;
-    gap: 25px; /* Space between the image and text */
-  }
-  
-  .hour-service-section .taxi-image {
-    width: 500px; /* Adjust width as needed */
-    height: auto;
-  }
-  
-  .hour-service-section .text p {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    margin: 0 0 15px 0;
-    color: #555;
-  }
-  
-  .hour-service-section .text p:last-child {
-    margin-bottom: 0; /* Remove margin from the last paragraph */
-  }
-  
+  max-width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 6rem;
+}
 
+.hour-service-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
 
+.hour-service-section .content {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Space between the image and text */
+}
 
-  /* Count Section Container */
+.hour-service-section .taxi-image {
+  width: 500px; /* Adjust width as needed */
+  height: auto;
+}
+
+.hour-service-section .text p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+  color: #555;
+}
+
+.hour-service-section .text p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* Count Section */
 .count-section {
-    position: relative;
-    height: 400px; /* Adjust the height as needed */
-    display: flex;
-    margin-top: 4rem;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Text color for counts */
-    padding: 0 20px;
-    overflow: hidden; /* Prevent any overflow outside the section */
-    background-image: url('/ser_building.jpg'); /* Add your background image */
-    background-size: cover; /* Ensure the image covers the section */
-    background-position: center center; /* Center the image */
-    background-attachment: fixed; /* Parallax scrolling effect */
-  }
-  
-  /* Count Container */
+  position: relative;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 20px;
+  overflow: hidden; /* Prevent overflow */
+  background-image: url('/ser_building.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.count-container {
+  position: relative;
+  z-index: 2; /* Ensure this content is above the background */
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Make sure the container takes full width */
+  max-width: 1200px;
+  text-align: center;
+  flex-wrap: wrap; /* Ensure blocks wrap for smaller screens */
+}
+
+.count-block {
+  flex: 1;
+  min-width: 250px; /* Ensure each block has a minimum width */
+  max-width: 300px; /* Prevent blocks from becoming too wide */
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.count-block .count {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #caaa58;
+  font-size: 66px;
+  line-height: 1;
+  letter-spacing: -2px;
+  word-wrap: break-word; /* Ensure long text wraps correctly */
+}
+
+.count-block p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+.count-block .p2 {
+  line-height: normal;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* Responsive Adjustments for Count Block */
+@media (max-width: 1024px) {
   .count-container {
-    position: relative;
-    z-index: 2; /* Ensure this content is above the background */
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
-    text-align: center;
+      justify-content: center;
   }
-  
-  /* Individual Count Block */
+
   .count-block {
-    flex: 1;
+      min-width: 200px; /* Reduce minimum width for tablets */
+      max-width: 250px; /* Reduce maximum width for tablets */
+      padding: 15px;
   }
-  
+
   .count-block .count {
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Raleway', sans-serif;
-    color: #caaa58;
-    font-size: 66px;
-    line-height: 1;
-    letter-spacing: -2px;
+      font-size: 50px; /* Adjust count font size */
   }
-  
+
   .count-block p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10px;
-    color: white;
+      font-size: 1.2rem; /* Adjust paragraph text */
   }
-  .count-block .p2{
-    line-height: normal;
-    font-size: 1.2rem;
-    font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  .count-section {
+      height: auto; /* Let height adjust for smaller screens */
+      padding: 20px;
   }
 
+  .count-block {
+      min-width: 180px; /* Further reduce block width for smaller screens */
+      max-width: 220px;
+  }
+
+  .count-block .count {
+      font-size: 40px; /* Further reduce font size */
+  }
+
+  .count-block p {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .count-section {
+      padding: 10px;
+      height: 130vh;
+  }
+
+  .count-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .count-block {
+      min-width: 150px; /* Minimum width of blocks on mobile */
+      max-width: 200px;
+      padding: 10px;
+  }
+
+  .count-block .count {
+      font-size: 36px; /* Smaller font size for mobile */
+  }
+
+  .count-block p {
+      font-size: 1rem; /* Adjust paragraph font size for mobile */
+  }
+}
 
 
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.feature {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.more-info {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #d1b26f;
+  font-size: 1rem;
+  border: 1.5px solid #d1b26f;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.feature:hover .more-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.more-info:hover {
+  background-color: #d1b26f;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hour-service-section .content {
+      flex-direction: column; /* Stack image and text for tablet sizes */
+      align-items: center;
+      text-align: center;
+  }
+
+  .hour-service-section .taxi-image {
+      width: 80%; /* Adjust image size for tablets */
+      margin-bottom: 20px;
+  }
+
+  .hour-service-section .text p {
+      font-size: 1.2rem; /* Adjust text size for tablets */
+  }
+
+  .count-section {
+      height: 300px; /* Adjust the height for tablet screens */
+  }
+
+  .count-container {
+      flex-direction: column; /* Stack count blocks for tablet screens */
+  }
 
   .features-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+      flex-direction: column; /* Stack feature blocks for tablets */
   }
-  
+
   .feature {
-    text-align: center;
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-    position: relative;
-    overflow: hidden;
+      width: 100%; /* Ensure features take full width on tablet */
+      margin-bottom: 20px;
   }
-  
-  .feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  .count-block .count {
+      font-size: 50px; /* Smaller font size for counts */
   }
-  
-  .feature h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
+
+  .count-block p {
+      font-size: 1.3rem; /* Smaller text for counts */
   }
-  
-  .feature img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .hour-service-section h2 {
+      font-size: 1.8rem; /* Adjust heading size for mobile */
   }
-  
-  .feature p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
+
+  .hour-service-section .content {
+      gap: 20px;
+      text-align: center;
   }
-  
-  .more-info {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #d1b26f;
-    font-size: 1rem;
-    border: 1.5px solid #d1b26f;;
-    cursor: pointer;
-    border-radius: 0.1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+  .hour-service-section .taxi-image {
+      width: 90%; /* Adjust image size further for small screens */
   }
-  
-  .feature:hover .more-info {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hour-service-section .text p {
+      font-size: 1rem; /* Adjust paragraph font size */
   }
-  
-  .more-info:hover {
-    background-color: #d1b26f;
-    color: white;
+
+  .count-section {
+      height: 250px; /* Adjust count section height for smaller screens */
   }
-  
+
+  .count-block .count {
+      font-size: 40px; /* Reduce count font size */
+  }
+
+  .count-block p {
+      font-size: 1.1rem; /* Reduce font size */
+  }
+
+  .features-section {
+      flex-direction: column;
+  }
+
+  .feature {
+      padding: 15px;
+      width: 100%; /* Feature blocks take full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .hour-service-section h2 {
+      font-size: 1.6rem; /* Further reduce heading size */
+  }
+
+  .hour-service-section .text p {
+      font-size: 0.9rem; /* Adjust paragraph text for mobile */
+  }
+
+  .count-section {
+      height: 120vh; /* Further reduce count section height */
+  }
+
+  .count-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .count-block .count {
+      font-size: 36px; /* Smaller font size for counts */
+  }
+
+  .count-block p {
+      font-size: 1rem; /* Smaller text for mobile */
+  }
+
+  .features-section {
+      flex-direction: column; /* Stack all feature blocks */
+  }
+
+  .feature {
+      padding: 10px;
+      width: 100%;
+  }
+}
