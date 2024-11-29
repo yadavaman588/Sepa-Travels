@@ -1,164 +1,143 @@
-.contact-heading{
-    font-size: 2.4rem;
-    margin-top: 4rem;
-    margin-left: 6vw;
-    word-spacing: 2px;
+/* Default Styling */
+.contact-heading {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  margin-left: 6vw;
+  word-spacing: 2px;
 }
 
-/* Full-page Centering */
+.container {
+  padding: 0 15px;
+}
+
 body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f9; /* Light background color */
-  }
-  
-  .form-container {
-    width: 100%; /* Adjust width as needed */
-    max-width: 80vw; /* Limit the max width */
-    padding: 20px;
-    background-color: #ffffff; /* White background for the form */
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-top: 4vw;
-  }
-  #message {
-    width: 100%;
-    height: 150px; /* Adjust height as needed */
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    resize: vertical; /* Allows resizing vertically only (optional) */
-  }
-  input:focus, 
-textarea:focus {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f9;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 80vw;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 4vw auto;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 5vh; /* Adds 5vh margin below inputs */
+}
+
+/* Focus State (Remove Black Border) */
+input:focus, textarea:focus {
   outline: none; /* Removes the default focus outline */
-  box-shadow: none; /* Removes the shadow */
+  box-shadow: none; /* Removes the shadow effect */
   border-color: #d1b26f; /* Optional: Add a subtle border color change for focus */
 }
-  .form-group {
-    margin-bottom: 15px;
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -4px; /* Keep error message close to input */
+  margin-bottom: 5vh; /* Adds 5vh margin below the error message */
+}
+
+
+button {
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  background-color: #caaa58;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.count-section {
+  position: relative;
+  height: 500px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color for counts */
+  padding: 0 20px;
+  overflow: hidden; /* Prevent any overflow outside the section */
+  background-image: url('/con_building.jpg'); /* Add your background image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Parallax scrolling effect */
+}
+
+.count-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.count-block {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .contact-heading {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 4vw;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input, textarea {
-    width: 100%;
+
+  .form-container {
+    max-width: 95vw;
     padding: 10px;
-    height: 4rem;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
+  }
+
+  button {
     font-size: 1rem;
   }
-  
-  button {
-    padding: 10px 20px;
-    color: black;
-    font-weight: bold;
-    border: 2px solid black;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 8px;
-  }
 
-  button:hover{
-    color: white;
-    background-color: black;
-    transition: 0.3s;
-  }
-  
-  /* Align submit button to the right */
-  .form-group-submit {
-    display: flex;
-    justify-content: flex-end; /* Right-align the button */
-  }
-  
-  /* Invalid Input Styling */
-  .invalid-input {
-    border-color: red;
-  }
-  
-  /* Error Message Styling */
-  .error-message {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: -5px;
-    margin-bottom: 10px;
-  }
-
-
-
-
-  /* Count Section Container */
-.count-section {
-    position: relative;
-    height: 390px; /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Text color for counts */
-    padding: 0 20px;
-    overflow: hidden; /* Prevent any overflow outside the section */
-    background-image: url('/con_building.jpg'); /* Add your background image */
-    background-size: cover; /* Ensure the image covers the section */
-    background-position: center center; /* Center the image */
-    background-attachment: fixed; /* Parallax scrolling effect */
-    margin-top: 3vh;
-  }
-  
-  /* Count Container */
   .count-container {
-    position: relative;
-    z-index: 2; /* Ensure this content is above the background */
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+    flex-direction: column;
     text-align: center;
   }
-  
-  /* Individual Count Block */
+
   .count-block {
-    flex: 1;
+    flex: 1 1 100%;
+    margin-bottom: 1vh;
   }
-  
-  .count-block .count {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Raleway', sans-serif;
-    color: #caaa58;
-    font-size: 1.5rem;
-    line-height: 1;
-    letter-spacing: 2px;
-  }
-  
-  .count-block p {
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: white;
+
+  .count-block h2{
+    font-size: 2.3vh;
   }
 
 
-  .map-section {
-  text-align: center;
-}
-
-.map-container {
-  width: 100%;
-  max-width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+  .map-container iframe {
+    height: 300px;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../Navbar/navbar/navbar/navbar.component";
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -17,6 +17,12 @@ export class ContactComponent implements OnInit{
   contactForm:FormGroup 
   mail:string = "rishabh@outlook.com"
   phoneNum:number = 123456;
+
+  isSmallScreen = window.innerWidth <= 600;
+@HostListener('window:resize', ['$event'])
+onResize(event: any) {
+  this.isSmallScreen = window.innerWidth <= 600;
+}
 
   constructor(private fb:FormBuilder){ 
     this.contactForm = this.fb.group({
