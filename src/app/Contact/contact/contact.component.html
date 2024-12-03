@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div class="container">
-  <h2 class="contact-heading">CONTACT FORM</h2>
+  <h2 class="contact-heading" i18n="@@contact_heading">CONTACT FORM</h2>
   <div class="form-container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <!-- Name Field -->
@@ -12,7 +12,8 @@
           formControlName="name" 
           [ngClass]="{ 'invalid-input': contactForm.get('name')?.invalid && contactForm.get('name')?.touched }" 
         />
-        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message" style="color: red;">
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message" style="color: red;"
+        i18n="@@name_error">
           Name is required.
         </div>
       </div>
@@ -24,11 +25,12 @@
           placeholder="Email" 
           type="email" 
           formControlName="email" 
-          [ngClass]="{ 'invalid-input': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }" 
+          [ngClass]="{ 'invalid-input': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }"
+
         />
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
-          <span *ngIf="contactForm.get('email')?.errors?.['required']" style="color: red;">Email is required.</span>
-          <span *ngIf="contactForm.get('email')?.errors?.['email']" style="color: red;">Please enter a valid email address.</span>
+          <span *ngIf="contactForm.get('email')?.errors?.['required']" style="color: red;" i18n="@@email_error">Email is required.</span>
+          <span *ngIf="contactForm.get('email')?.errors?.['email']" style="color: red;" i18n="@@email_error2">Please enter a valid email address.</span>
         </div>
       </div>
 
@@ -40,14 +42,15 @@
           formControlName="message" 
           [ngClass]="{ 'invalid-input': contactForm.get('message')?.invalid && contactForm.get('message')?.touched }">
         </textarea>
-        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message" style="color: red;">
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message" style="color: red;"
+        i18n="@@message_error">
           Message is required.
         </div>
       </div>
 
       <!-- Submit Button -->
       <div class="form-group-submit">
-        <button type="submit">Send message</button>
+        <button type="submit" i18n="@@send_btn">Send message</button>
       </div>
     </form>
   </div>

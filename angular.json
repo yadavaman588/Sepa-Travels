@@ -29,10 +29,10 @@
             ],
             "styles": [
               "src/styles.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -55,6 +55,14 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+              "localize": ["fr"],
+              "outputPath": "dist/sepa-travels-fr"
+            },
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/sepa-travels-en"
             }
           },
           "defaultConfiguration": "production"
@@ -67,12 +75,15 @@
             },
             "development": {
               "buildTarget": "sepa-travels:build:development"
+            },
+           "fr": {
+              "buildTarget": "sepa-travels:build:fr"
+            },
+         "en": {
+              "buildTarget": "sepa-travels:build:en"
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -94,6 +105,15 @@
             ],
             "scripts": []
           }
+        },
+       "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
         }
       }
     }

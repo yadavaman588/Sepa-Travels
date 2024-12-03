@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="homepageheading" datatype="html">
+        <source>24 HOURS 7 DAYS A WEEK</source>
+        <target>24 heures sur 24, 7 jours sur 7</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cllusbtn" datatype="html">
+        <source>CALL US NOW!</source>
+        <target>APPELEZ-NOUS MAINTENANT!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_desc" datatype="html">
+        <source> The operator will call back immediately<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> and report the cost of travel </source>
+        <target>L'opératrice vous rappellera immédiatement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_time" datatype="html">
+        <source>10</source>
+        <target>10</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_serhead" datatype="html">
+        <source>THE CAR IS SUPPLIED IN</source>
+        <target>LA VOITURE EST LIVREE EN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ser_para" datatype="html">
+        <source> Taxi VIP company provides you with the best services in New York. You can order a taxi from New York airport to the hotel, and our driver will meet you at the gate with a nameplate. We provide taxi service to any New York airport. Our specialty is taxi and business transfers for foreigners. </source>
+        <target>La société Taxi VIP vous propose les meilleurs services à New York. Vous pouvez commander un taxi de l'aéroport de New York à l'hôtel, et notre chauffeur vous accueillera à la porte avec une plaque signalétique. Nous proposons un service de taxi vers n'importe quel aéroport de New York. Notre spécialité est le taxi et les transferts d'affaires pour les étrangers.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">29,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cb_p" datatype="html">
+        <source>STANDARD CLASS</source>
+        <target>CLASSE STANDARD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cb_p2" datatype="html">
+        <source>BUSINESS CLASS</source>
+        <target>CLASSE AFFAIRES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cb_p3" datatype="html">
+        <source>MINIVAN &amp; VAN CLASS</source>
+        <target>MINI-FOURGONNETTES &amp; CLASSE VAN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_p1" datatype="html">
+        <source>PASSENGERS</source>
+        <target>PASSAGÈRES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_h1" datatype="html">
+        <source>24 HOURS 7 DAYS A WEEK</source>
+        <target>24 heures sur 24, 7 jours sur 7</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="span_1" datatype="html">
+        <source>The operator will call back immediately and report the cost of travel</source>
+        <target>L'opérateur vous rappellera immédiatement et vous informera du coût du déplacement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deedback_txt" datatype="html">
+        <source>Thank you very much. I&apos;m impressed with your service. I&apos;ve already told my friends about your company and your quick response, thanks again!</source>
+        <target>Merci beaucoup. Je &apos; suis impressionné par votre service. J'ai &apos; déjà parlé de votre entreprise à mes amis et de votre réponse rapide, merci encore !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feed_txt2" datatype="html">
+        <source>Wow, I&apos;m so happy with your service. You managed to exceed my expectations! You guys are very efficient and I will refer more people to your company!</source>
+        <target>Wow, je &apos; suis tellement contente de votre service. Vous avez réussi à dépasser mes attentes ! Vous êtes très efficaces et je recommanderai votre entreprise à d'autres personnes !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feed_txt3" datatype="html">
+        <source>I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.</source>
+        <target>Je voudrais simplement vous remercier pour votre service rapide et efficace, pour votre personnel de soutien amical et professionnel ! Je recommanderai votre entreprise experte à tous mes amis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Home/home/home.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home" datatype="html">
+        <source>HOME</source>
+        <target>MAISON</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Navbar/navbar/navbar/navbar.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about" datatype="html">
+        <source>ABOUT</source>
+        <target>À PROPOS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Navbar/navbar/navbar/navbar.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="service" datatype="html">
+        <source>SERVICES</source>
+        <target>SERVICES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Navbar/navbar/navbar/navbar.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact" datatype="html">
+        <source>CONTACT</source>
+        <target>CONTACT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Navbar/navbar/navbar/navbar.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="callus" datatype="html">
+        <source>Call Us Now!</source>
+        <target>Appelez-nous maintenant!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Navbar/navbar/navbar/navbar.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="service_mainheading" datatype="html">
+        <source>24 HOUR SERVICE</source>
+        <target>SERVICE 24 HEURES SUR 24</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p1" datatype="html">
+        <source> Our reliable taxi sedan and van services go far beyond the norm. We not only get you where you need to be, but we transport you with a level of care that can only be achieved through years of experience serving the area. </source>
+        <target>Nos services de taxis, berlines et fourgonnettes fiables vont bien au-delà de la norme. Non seulement nous vous emmenons là où vous devez être, mais nous vous transportons avec un niveau de soin qui ne peut être atteint que grâce à des années d'expérience au service de la région.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p2" datatype="html">
+        <source> Our taxi operators are local experts who know the best routes to get you to your destination on time. And we rely on GPS technology to further ensure quick, accurate service. </source>
+        <target>Nos chauffeurs de taxi sont des experts locaux qui connaissent les meilleurs itinéraires pour vous amener à destination à temps. Et nous nous appuyons sur la technologie GPS pour garantir un service rapide et précis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_p2" datatype="html">
+        <source>With more than 4000 taxi cabs in its network, TaxiVIP can deliver your parcel to its destination.</source>
+        <target>Avec plus de 4000 taxis dans son réseau, TaxiVIP peut livrer votre colis à destination.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_p3" datatype="html">
+        <source>PARCEL DELIVERY</source>
+        <target>LIVRAISON DE COLIS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4380955252014701065" datatype="html">
+        <source>Take the stress out of travelling to and from the airport by booking one of TaxiVIP reliable taxis.</source>
+        <target>Éliminez le stress du voyage vers et depuis l'aéroport en réservant l'un des taxis fiables de TaxiVIP.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_p4" datatype="html">
+        <source>DOOR TO DOOR SERVICE</source>
+        <target>Éliminez le stress du voyage vers et depuis l'aéroport en réservant l'un des taxis fiables de TaxiVIP.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cs_p5" datatype="html">
+        <source>Offering door-to-door service with drop-off right at your next destination.</source>
+        <target>Offrant un service porte-à-porte avec dépôt directement à votre prochaine destination.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5109185042031316752" datatype="html">
+        <source>LOCATION CODES</source>
+        <target>CODES DE LOCALISATION.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <note priority="1" from="description">fs_h3</note>
+      </trans-unit>
+      <trans-unit id="8004390163655603812" datatype="html">
+        <source>Businesses can be assigned location codes upon request. This is a 3 or 4 character code specific to your location that can expedite the cab ordering process. When you call in for a cab you will just give the calltaker your code and will not have to give your address.</source>
+        <target>Les entreprises peuvent se voir attribuer des codes d'emplacement sur demande. Il s'agit d'un code à 3 ou 4 caractères spécifique à votre emplacement qui peut accélérer le processus de commande de taxi. Lorsque vous appelez pour un taxi, vous donnez simplement votre code au chauffeur et n'avez pas à donner votre adresse.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+        <note priority="1" from="description">fs_p1</note>
+      </trans-unit>
+      <trans-unit id="5137721313473588206" datatype="html">
+        <source>More Info</source>
+        <target>Plus d'infos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2442746437009961697" datatype="html">
+        <source>CORPORATE ACCOUNTS</source>
+        <target>COMPTES D'ENTREPRISE</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fs_p2" datatype="html">
+        <source> A TaxiVIP corporate charge account provides your business or organization with priority access to passenger and package delivery services. Your account is the perfect answer for providing transportation to imporatant clients, visiting executives. </source>
+        <target>Un compte d'entreprise TaxiVIP offre à votre entreprise ou organisation un accès prioritaire aux services de livraison de passagers et de colis. Votre compte est la solution idéale pour assurer le transport de clients importants et de cadres en visite.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="moreinfoBtn" datatype="html">
+        <source>More Info</source>
+        <target>Plus d'infos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5251111268955170861" datatype="html">
+        <source>QUOTE &amp; BOOK</source>
+        <target>DEVIS &amp; LIVRE</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+        <note priority="1" from="description">fs_quote</note>
+      </trans-unit>
+      <trans-unit id="fs_p3" datatype="html">
+        <source> Get a fast quote for your transportation needs, then make your reservation online with our convenient booking engine. When you book your taxi online, you can track your taxi&apos;s arrival on our website. </source>
+        <target>Obtenez rapidement un devis pour vos besoins de transport, puis effectuez votre réservation en ligne grâce à notre moteur de réservation pratique. Lorsque vous réservez votre taxi&apos; en ligne, vous pouvez suivre l'arrivée de votre taxi sur notre site Web.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Services/service/service.component.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
