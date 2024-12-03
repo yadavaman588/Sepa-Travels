@@ -3,6 +3,8 @@
     padding: 20px;
     font-family: Arial, sans-serif;
   }
+
+
   
   /* Styling for the text content (heading and paragraph) */
   .text-content {
@@ -30,7 +32,9 @@
     gap: 5vw; /* Space between the cards */
     justify-content: center; /* Center cards horizontally */
     align-items: center; /* Center cards vertically */
+    
   }
+  
   
   /* Individual card styles */
   .card {
@@ -99,8 +103,27 @@
     gap: 20px; /* Add spacing between bullet rows */
     width: 100%; /* Take full width */
     max-width: 1200px; /* Optional: Limit the container's width */
-    margin-left: 6vw;
+    margin-left: 4vw; 
   }
+
+
+
+/* changed to 0 to avoid movement of page left right*/
+  @media (max-width: 1024px) {
+    .bullet-points {
+      margin-left: 0vw;
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bullet-points {
+      margin-left: 0vw;
+      
+       
+    }
+  }
+
   
   .bullet {
     display: flex;
@@ -138,6 +161,9 @@
     overflow: hidden; /* Hide content that overflows */
     opacity: 0.9; /* Optional: Make it less opaque */
   }
+
+  
+  
   
   /* Transparent Overlay */
   .our-team-overlay {
@@ -286,23 +312,6 @@
     line-height: 1.6;
   }
   
-  /* Button Style */
-  .download-button {
-    background-color: transparent;
-    border: 2px solid black; /* Black border */
-    color: black;
-    padding: 15px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  /* Button Hover Effect */
-  .download-button:hover {
-    background-color: black;
-    color: white; /* White text on hover */
-  }
   
   /* Image Container */
   .image-container {
@@ -331,12 +340,13 @@
 
   
 /*made responsive for small screens*/
- @media (max-width: 768px) {
-    .driver-section{
-      flex-direction: column;
-       
-    }
+@media (max-width: 768px) {
+  .driver-section {
+    flex-direction: column;
+    
+   
   }
+}
   .driver-info,
   .driver-training {
     flex: 1; /* Makes both sections equally wide */
