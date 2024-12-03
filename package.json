@@ -29,7 +29,7 @@
     "@angular-devkit/build-angular": "^19.0.1",
     "@angular/cli": "^19.0.1",
     "@angular/compiler-cli": "^19.0.0",
-    "@angular/localize": "^19.0.0",
+    "@angular/localize": "^19.0.1",
     "@types/google.maps": "^3.58.1",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.4.0",
