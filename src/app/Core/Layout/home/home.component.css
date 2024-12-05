@@ -31,10 +31,11 @@
   .info p {
     font-size: 18px;
     margin: 5px 0;
-    color: #CAAA58;
+    color: #FDD302;
   }
   .fa-phone{
     font-size: 3.8rem;
+    color: #FDD302;
   }
   
   .phone-number {
@@ -43,7 +44,7 @@
     margin: 20px 0;
   }
   .phone-number:hover{
-    color: #d1b26f;
+    color: #FDD302;
     cursor: pointer;
     transition: 0.5s;
   }
@@ -91,7 +92,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 280px;
   line-height: 0.5;
   letter-spacing: -10px;
@@ -101,7 +102,7 @@
   font-weight: 900;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 52px;
   line-height: 2.5;
   letter-spacing: 4px;
@@ -223,7 +224,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-  color: #caaa58;
+  color: #FDD302;
   font-size: 66px;
   line-height: 1;
   letter-spacing: -2px;
@@ -245,7 +246,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d1b26f; /* Matches the golden background */
+  background-color: #FDD302; /* Matches the golden background */
   color: #fff; /* White text */
   padding: 20px;
 }
@@ -340,6 +341,7 @@
   }
   .fa-phone{
     font-size: 3.8rem;
+    color: #FDD302;
   }
 
   .info, .car-image {
@@ -380,6 +382,7 @@
   }
   .fa-phone{
     font-size: 1.7rem;
+    color: #FDD302;
   }
 
   .info h2 {
