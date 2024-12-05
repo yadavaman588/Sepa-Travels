@@ -80,8 +80,8 @@
 
 .card-overlay button {
   padding: 10px 20px; 
-  color: #caaa58;;
-  border: 1.3px solid #caaa58;;
+  color: #FDD401;;
+  border: 1.3px solid #FDD401;;
   cursor: pointer;
   border-radius: 0.1rem;
   font-size: 14px;
@@ -89,7 +89,7 @@
 }
 
 .card-overlay button:hover {
-  background-color: #caaa58;
+  background-color: #FDD401;
   color: white;
 }
 
@@ -134,7 +134,7 @@
   width: 100%;
   max-width: 100%; /* Allow bullets to span full width */
   font-size: 16px;
-  color: #d1b26f;
+  color: #FDD401;
   line-height: 1.6;
   gap: 30px; /* Space between bullet items in a row */
 }
