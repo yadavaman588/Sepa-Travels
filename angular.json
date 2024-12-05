@@ -17,8 +17,7 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js",
-              "@angular/localize/init"
+              "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -55,14 +54,6 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
-            },
-            "fr": {
-              "localize": ["fr"],
-              "outputPath": "dist/sepa-travels-fr"
-            },
-            "en": {
-              "localize": ["en"],
-              "outputPath": "dist/sepa-travels-en"
             }
           },
           "defaultConfiguration": "production"
@@ -75,12 +66,6 @@
             },
             "development": {
               "buildTarget": "sepa-travels:build:development"
-            },
-           "fr": {
-              "buildTarget": "sepa-travels:build:fr"
-            },
-         "en": {
-              "buildTarget": "sepa-travels:build:en"
             }
           },
           "defaultConfiguration": "development"
@@ -90,8 +75,7 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing",
-              "@angular/localize/init"
+              "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -105,15 +89,6 @@
             ],
             "scripts": []
           }
-        },
-       "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
-        }
-      },
-      "i18n": {
-        "sourceLocale": "en",
-        "locales": {
-          "fr": "src/locale/messages.fr.xlf"
         }
       }
     }

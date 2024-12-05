@@ -6,7 +6,6 @@
     "outDir": "./out-tsc/app",
     "types": [
       "google.maps",
-      "@angular/localize"
     ]
   },
   "files": [
