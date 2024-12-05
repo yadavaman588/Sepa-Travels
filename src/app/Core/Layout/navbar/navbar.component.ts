@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-navbar',
   imports: [],
@@ -11,7 +10,9 @@ export class NavbarComponent {
 
   phoneNum:number = 12345678;
 
-  constructor(private _route:Router){ }
+  constructor(private _route:Router){
+    // this.translate.setDefaultLang('en'); // Default language
+   }
   about(){
     this._route.navigate(['/About'])
   }
@@ -40,4 +41,9 @@ export class NavbarComponent {
       navbarCollapse.classList.remove('show');
     }
   }
+  // toggleLanguage(event: Event): void {
+  //   const isChecked = (event.target as HTMLInputElement).checked;
+  //   const selectedLanguage = isChecked ? 'fr' : 'en';
+  //   this.translate.use(selectedLanguage);
+  // }
 }
