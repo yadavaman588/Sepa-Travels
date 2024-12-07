@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -10,8 +12,20 @@ export class NavbarComponent {
 
   phoneNum:number = 12345678;
 
-  constructor(private _route:Router){
-    // this.translate.setDefaultLang('en'); // Default language
+  constructor(private _route:Router, private translate: TranslateService){
+    const savedLanguage = localStorage.getItem('language') || 'en';
+  this.translate.setDefaultLang('en');
+  this.translate.use(savedLanguage);
+
+  // Set toggle state based on saved language
+  setTimeout(() => {
+    const toggleInput = document.querySelector(
+      '.language-switch input'
+    ) as HTMLInputElement;
+    if (toggleInput) {
+      toggleInput.checked = savedLanguage === 'fr';
+    }
+  });
    }
   about(){
     this._route.navigate(['/About'])
@@ -41,9 +55,14 @@ export class NavbarComponent {
       navbarCollapse.classList.remove('show');
     }
   }
-  // toggleLanguage(event: Event): void {
-  //   const isChecked = (event.target as HTMLInputElement).checked;
-  //   const selectedLanguage = isChecked ? 'fr' : 'en';
-  //   this.translate.use(selectedLanguage);
-  // }
+  toggleLanguage(event: Event): void {
+    const isChecked = (event.target as HTMLInputElement).checked;
+    const selectedLanguage = isChecked ? 'fr' : 'en';
+  
+    // Use the selected language
+    this.translate.use(selectedLanguage);
+  
+    // Save the selected language in localStorage for persistence
+    localStorage.setItem('language', selectedLanguage);
+  }
 }
